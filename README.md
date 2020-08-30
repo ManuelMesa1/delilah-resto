@@ -8,5 +8,6 @@ Resources:
 - Json Web Token
 - Body Parser
 - Express
+- sqlite3
 
 *currently still in progress*

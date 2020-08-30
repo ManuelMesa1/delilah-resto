@@ -1,0 +1,31 @@
+DELILAH RESTO API DOCUMENTATION
+
+USERS endpoints:
+
+POST (/users): This endpoint create a new user entering the following required information in the body in a JSON format:
+- username
+- password
+- email
+- address
+- firstname
+- lastname
+- phone
+
+GET (/users): This resquest provides all the users registered on the table only if the user requesting is an administrator.
+The response contains all the information of the user as the following example:
+{
+"username":"john123",
+"password":"ABC123",
+"email":"john123@mail.com",
+"address":"123 Main Ave",
+"firstname":"John",
+"lastname":"Smith",
+"phone":"9999999"
+}
+
+GET (/users/:id): This endpoint responds with the information of a certain user based on the id. The id is entered in the
+params, along with the endpoint and NOT in the body. 
+
+PUT(/users/:id): This endpoint updates the basic information of the user for which the id is entered. The parameters that aren't updated remain the same.
+
+DELETE
